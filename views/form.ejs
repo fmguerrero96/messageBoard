@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Create a new message</h1>
+    <form method="POST" action="/new">
+        <div class="duo">
+            <label for="userName">Your Name: </label>
+            <input required type="text" id="userName" name="userName">
+        </div>
+        <div class="duo">
+            <label for="userMessage">Your Message: </label>
+            <textarea id="userMessage" name="userMessage" rows="7" cols="35"></textarea>
+        </div>
+        <button type="submit">SUBMIT</button>
+     </form>
+  </body>
+</html>
